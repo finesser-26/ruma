@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Pop Quiz</title>
+<meta charset="utf-8">
+<style>
+body {
+    background-color:floralwhite;
+    color: midnightblue;
+}
+ol {
+    list-style-type: lower-alpha;
+}
+input[type="submit"] {
+    display: block;
+    width: 7em;
+    height: 4em;
+    float: left;
+    background: red;
+    font-size: inherit;
+    border: 1px solid #04699d;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(o,o,o,.5);
+    color: ivory;
+    font-style: verdana;
+}
+</style>
+</head>
+<body>
+    <input type="text" name="countdown" value="00:05:00">
+    <p>Q1) How many countries are there in Africa?</p>
+    <ol>
+        <li><label><input type="radio" name="number" value="54">54</label></li>
+        <li><label><input type="radio" name="number" value="62">62</label></li>
+        <li><label><input type="radio" name="number" value="52">52</label></li>
+        <li><label><input type="radio" name="number" value="50">50</label></li>
+    </ol>
+    <hr>
+    <p>Q2)Which State in the USA is the statue of Liberty located?</p>
+    <ol>
+        <li><label><input type="radio" name="state" value="New york">New York</label></li>
+        <li><label><input type="radio" name="State" value="California">California</label></li>
+        <li><label><input type="radio" name="state" value="Texas">Texas</label></li>
+        <li><label><input type="radio" name="state" value="Miami">Miami</label></li>
+    </ol>
+    <hr>
+    <p>Q3)Who invented electricity?</p>
+    <ol>
+        <li><label><input type="radio" name="human" value="John Dalton">John Dalton</label></li>
+        <li><label><input type="radio" name="human" value="Sir Isaac Newton">Sir Isaac Newton</label></li>
+        <li><label><input type="radio" name="human" value="Michael Faraday">Michael Faraday</label></li>
+        <li><label><input type="radio" name="human" value="Galileo Galilei">Galileo Galilei</label></li>
+    </ol>
+    <hr>
+    <p>Q4)When did Nigeria gain Independence?</p>
+    <ol>
+        <li><label><input type="radio" name="digit" value="1957">1957</label></li>
+        <li><label><input type="radio" name="digit" value="1960">1960</label></li>
+        <li><label><input type="radio" name="digit" value="1966">1966</label></li>
+        <li><label><input type="radio" name="digit" value="1959">1959</label></li>
+    </ol>
+    <hr>
+    <p>Q5)who was the first black president of the United States?</p>
+        <ol>
+            <li><label><input type="radio" name="name" value="George Washington">George Washington</label></li>
+            <li><label><input type="radio" name="name" value="Donald Trump">Donald Trump</label></li>
+            <li><label><input type="radio" name="name" value="George Bush">George Bush</label></li>
+            <li><label><input type="radio" name="name" value="Barack Obama">Barack Obama</label></li>
+        </ol>
+        <hr>
+        <form action="mailto:usmanjaafarruma@gmail.com" method="POST">
+        <fieldset>
+          <input type="submit" value="Submit!" >
+        </fieldset>
+        </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Animation</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                
+            }
+            @keyframes example {
+                0%{background-color: red}
+                25%{background-color: orangered}
+                50%{background-color: orange;}
+                100%{background-color: yellow;}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p><strong>Note:</strong>This example does not work in IE version 9 and earlier</p>
+
+        <div></div>
+
+        <p><strong>Note:</strong>When the animation is finished, it changes back to its original state</p>
+    </body>
+</html>

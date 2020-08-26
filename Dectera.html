@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Dectera</title>
+        <style>
+            html {
+                line-height: 1.15;
+                text-size-adjust: 100%;
+                max-width: 980px;
+            }
+            body {
+                margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+            }
+            h1 {
+                display: block;
+                position: relative;
+                top: 2em;
+                left: 4em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .tab li {
+                position: relative;
+                left: 45em;
+              
+            }
+            #bdright {
+                border-right: 1px solid darkgray;
+            }
+            .sign-in {
+                display: block;
+                position: relative;
+                left: 67em;
+                bottom: 4.15em;
+                padding: 30px;
+            }
+            .sign-in input{
+                display: block;
+                background-color: royalblue;
+                position: relative;
+                left: 6em;
+                bottom: 2em;
+                padding: 8px 32px;
+                color: seashell;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+                cursor: pointer;
+            }
+            .sign-in input:hover {
+                background-color: navy;
+            }
+            .sign-in a {
+                color: dimgray;
+                text-decoration: none;
+                font-size: 20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .dropbtn {
+                 background-color: transparent;
+                 color: white;
+                 padding: 16px;
+                 font-size: 16px;
+                  border: none;
+                  cursor: pointer;
+            }
+            .dropbtn:hover {
+                 color: royalblue;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#firstbtn {
+    position: relative;
+    left: 34em;
+    background-color: transparent;
+    color: dimgray;
+    font-size: 20px;
+}
+#firstbtn:hover {
+    color: royalblue;
+}
+#firstbtn:visited {
+    color: royalblue;
+}
+#secondbtn {
+    position: relative;
+    left: 35em;
+    background-color: transparent;
+    color: dimgray;
+    font-size: 20px;
+}
+#secondbtn:hover, #secondbtn:visited {
+    color: royalblue;
+}
+#thirdbtn {
+    position: relative;
+    left: 35em;
+    border-right: 1px solid black;
+    background-color: transparent;
+    color: dimgray;
+    font-size: 20px;
+}
+#thirdbtn:hover, #thirdbtn:active {
+    color: royalblue;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 36em;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+}
+.dropdown-contentA {
+    display: none;
+    position: absolute;
+    left: 50em;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-contentB {
+    display: none;
+    position: absolute;
+    left: 57em;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-contentA a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-contentB a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.show {display:block;}
+.dropdown-content li {
+    list-style-type: none;
+    text-align: center;
+}
+.dropdown-contentA li {
+    list-style-type: none;
+    text-align: center;
+}
+.dropdown-contentB li {
+    list-style-type: none;
+    text-align: center;
+}
+            #flexbox {
+                width: 1380px;
+                height: 500px;
+                border: 1px solid royalblue;
+                margin: 50px auto;
+                background-color: royalblue;
+            }
+            #flexbox p {
+                font-size: 55px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: seashell;
+                text-align: center;
+            }
+            #flexbox li {
+                list-style-type: none;
+            }
+            #flexbox a {
+                text-decoration: none;
+                float: left;
+                color: black;
+                padding: 15px;
+                margin: 4px;
+                font-size: 25px;
+                text-align: center;
+                background-color: white;
+            }
+            #flexbox pre {
+                text-align: center;
+                color: seashell;
+            }
+            .box {
+                color: teal;
+            }
+            h2 {
+                text-align: center;
+            }
+            .contents {
+                position: relative;
+                left: 32em;
+                bottom: 29em;
+            }
+            .content {
+                position: relative;
+                left: 2em;
+            }
+            img {
+                float: left; 
+                clear: both;
+                overflow: hidden;
+                padding: 10px;
+            } 
+            .line {
+                border-bottom: 4px solid orange;
+            }
+            #body h4 {
+                color: black;
+            }
+            #body {
+                padding: 30px;
+                margin: 10px 5px;
+            }
+            #body a {
+                text-decoration: none;
+                text-align: center;
+                border: 1px solid royalblue;
+                background-color: royalblue;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px 0 rgba(rgb(0, 0, 0),rgb(10, 10, 10) , rgb(100, 100, 238), 0.5);
+                color: seashell;
+            }
+            #body h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: dimgray;
+            }
+            .bigger {
+                font-size: xx-large;
+            }
+            .form-box {
+                width: 450px;
+                height: 310px;
+                background-color: beige;
+                position: relative;
+                left: 45em;
+                bottom: 9em;
+                padding: 10px 25px;
+                text-align: left;
+                color: dimgray;
+            }
+            .form-box button {
+                cursor: not-allowed;
+            }
+            .large {
+                font-weight: bold;
+                font-size: 30px;
+            }
+            #lastp {
+                width: 1380px;
+                height: 380px;
+                background-color: royalblue;
+                margin: 80px auto;
+                padding: 20px 2px;
+                text-align: center;
+                color: seashell;
+            }
+            #lastp a {
+                color: seashell;
+            }
+            #last p label {
+                text-align: left;
+            }
+            #last p input {
+                width: 100px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                position: relative;
+                top: 2em;
+            }
+            .btn {
+                border: 1px solid seashell;
+                background-color: seashell;
+                border-radius: 6px;
+                padding: 15px;
+                margin: 20px;
+                text-decoration: none;
+                position: relative;
+                right: 8em;
+                top: 1em;
+            }
+            #links li {
+                list-style-type: none;
+                color: gray;
+            }
+            #links a {
+                color: gray;
+                text-decoration: none;
+                padding: 0.5em;
+            }
+            #links pre {
+                color: gray;
+                font-family: Arial, Helvetica, sans-serif; 
+            }
+            #links p {
+                text-align: center;
+                color: gray;
+            }
+            pre {
+                color: gray;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+            .second {
+                position: relative;
+                left: 21.5em;
+                bottom: 55em;
+                
+            }
+            .third {
+                position: relative;
+                left: 21.5em;
+                bottom: 53em;
+            }
+            .fourth {
+                position: relative;
+                left: 43.5em;
+                bottom: 77.25em;
+            }
+            .fifth {
+                position: relative;
+                left: 43.5em;
+                bottom: 75em;
+            }
+            .sixth {
+                position: relative;
+                left: 58em;
+                bottom: 94em;
+            }
+            .seventh {
+                position: relative;
+                left: 58em;
+                bottom: 90.5em;
+            }
+            .eighth {
+                position: relative;
+                left: 72em;
+                bottom: 109.5em;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>Dectera</h1>
+            <div id="dropdown">
+                <button class="dropbtn" id="firstbtn" onclick="myFunction()">Program</button>
+                <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <li><a href="#">programming</a></li>
+                    <li><a href="#">Artificial Inteliigence</a></li>
+                    <li><a href="#">Business School</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Software Engineering</a></li>
+                </ul>
+                </div>
+                <button class="dropbtn" id="secondbtn" onclick="myFunctionA()">Career</button>
+                <div id="career" class="dropdown-contentA">
+                <ul>
+                  <li><a href="#">programming</a></li>
+                  <li><a href="#">Networking</a></li>
+                  <li><a href="#">AI</a></li>
+                  <li><a href="#">Data Science</a></li>
+                  <li><a href="#">Data Analysis</a></li>
+                </ul>
+                </div>
+                <button class="dropbtn" id="thirdbtn" onclick="myFunctionB()">For Enterprise</button>
+                <div id="for-enterprise" class="dropdown-contentB">
+                <ul>
+                  <li><a href="#">Social Skills</a></li>
+                  <li><a href="#">Business Studies</a></li>
+                  <li><a href="#">Career coaching</a></li>
+                  <li><a href="#">Skill Development</a></li>
+                  <li><a href="#">Digital Economy</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="sign-in">
+                <a href="Dectera-sign-in.html">Sign In</a>
+                <input type="submit" value="Get Started">
+            </div>
+            <div>    
+            </div>
+        </div>
+        <div id="flexbox">
+            <p>Explore our schools to find your perfect<br> program</p>
+            <pre>Match Your goals to our programs, explore your options, and map out your path to success.</pre>
+            <ul>
+                <li><a href="#"><span class="box">school of</span><br>Data Science</a></li>
+                <li><a href="#"><span class="box">school of</span><br>Artificial Intelligence</a></li>
+                <li><a href="#"><span class="box">school of</span><br>programming</a></li>
+                <li><a href="#"><span class="box">school of</span><br>Autonomous Systems</a></li>
+                <li><a href="#"><span class="box">school of</span><br>Cloud Computing</a></li>
+                <li><a href="#"><span class="box">school of</span><br>Business</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            <h2>All Our Programs Include</h2>
+            <div class="content">
+                <img src="../images/imagelaptop.jpg" width="200px" height="200px">
+                <h4><span class="line">Real-world project from</span><br> industry experts</h4>
+                <pre>With real world projects and immersive
+content built in partnership with top tier
+companies,you'll master the tech skills
+companies want. 
+                </pre>
+            </div>
+            <div class="content">
+                <img src="../images/imagescall.jpg" alt="" width="200px" height="200px">
+                <h4>Personal career coach<br><span class="line">and career service</span></h4>
+                <pre>You'll have access to career coaching
+sessions, interview prep advice, and resume
+and online professional profile reviews to
+help you grow in your career.
+                </pre>
+                <div class="contents">
+                    <img src="../images/manlaptop.jpg" alt="" width="200px" height="200px">
+                    <h4><span class="line">Technical</span> mentor support</h4>
+                    <pre>Our knowlegeable mentors guide your
+learning and are focused on answering your
+questions, motivating you and keeping you
+on track</pre>
+                </div>
+                <div class="contents">
+                    <img src="../images/index.jpg" alt="" width="200px" height="200px">
+                    <h4><span class="line">Flexible</span> learning program</h4>
+                    <pre>Get a custom learning plan tailored to fit your
+busy life. Learn at your own pace and reach
+your personal goals on the schedule that
+works best for you.
+                    </pre>
+                </div>
+                <div>
+                <P><small>SCHOOL OF</small><br> <span class="bigger">Data Science</span></P>
+                <pre>Learn in-demand data skills in the School of Data. Launch or advance your
+career as a Business Analyst, Data Analyst, or Data Scientist, and enroll in
+programs build with Kaggle, Tableau, Alteryx, and Mode. 
+                </pre>
+                <a href="#">LEARN MORE</a>
+                <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Data Science</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+                <hr>
+                <p><small>SCHOOL OF</small><br> <span class="bigger">Artificial Intelligence</span></p>
+                <pre>Advance your career in one of today's most transformational technological fields
+-Artificial Inteliigence. Build real-world projects and add to your toolkit, in
+cutting-edge areas sych as 
+Deep Learning, Machine Learning, and AI for trading. 
+                </pre>
+                <a href="#">LEARN MORE</a>
+                <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Artificial Intelligence</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+                <hr>
+                <p><small>SCHOOL OF</small><br> <span class="bigger">Programming</span></p>
+                <pre>Build portfolio-ready projects, learn new tools, and advance your career as a
+developer, in the School of Programming. Study programs developed with 
+industry leaders, and learn the skills for careers in areas such as Blockchain and Full Stack development. 
+                </pre>
+                <a href="#">LEARN MORE</a>
+                <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Programming</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+                <hr>
+                <p><small>SCHOOL OF</small><br> <span class="bigger">Autonomous Systems</span></p>
+                <pre>Prepare for an exciting career in autonomous systems, and learn core tools,
+concepts and techniques. Master concepts such as Computer Vision,
+Localization, and Path Planning, in programs designed for both complete
+beginners and experienced professionals.
+                </pre>
+                <a href="#">LEARN MORE</a>  <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Autonomous Systems</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+                <hr>
+                <p><small>SCHOOL OF</small><br> <span class="bigger">Cloud Computing</span></p>
+                <pre>All companies are adopting cloud computing to enable their digital
+transfomation. The growth of this technology has created incredible demand
+for Cloud computing jobs, from Cloud developers and Cloud DevOps roles to
+more specialized roles such as solutions architects and Cloud security engineers.
+You can join this growing field - get started today.
+                </pre>
+                <a href="#">LEARN MORE</a>
+                <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Cloud Computing</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+                <hr>
+                <p><small>SCHOOL OF</small><br> <span class="bigger">Business</span></p>
+                <pre>Whether you are just getting started, adding to your skill set, or advancing your
+career as a digital marketer, product designer, or business analyst, you'll master
+modern business skills in the School of Business.
+                </pre>
+                <a href="#">LEARN MORE</a>
+                <div class="form-box">
+                    <p>For more information About<br><span class="large">School of Business</span></p>
+                    <label for="more-info"><input type="text" placeholder="email@email.com"></label>
+                    <label for="submit"><button>SUBMIT</button></label>
+                    <p>By providing your information and clicking "submit", you<br>consent and agree to recieve marketing emails from<br>Dectera, and that your information will be used in accordance with the Dectera<a href="#" style="text-decoration: underline; border: none; background-color: transparent; color: dimgray;">Term of Use</a>and<a href="#" style="text-decoration: underline; background-color: transparent; border: none; color: dimgray;">Privacy<br>Policy.</a>Including relevant opt out provisions therein.</p>
+                </div>   
+            </div>
+        </div>
+        </div>
+        <div id="lastp">
+            <p><span class="bigger">Need help selecting the right program for you?</span></p>
+            <p class="dif">Get in touch to receive more information on our available programs and updates on new<br> programs to come.</p>
+            <div>
+                <form action="#">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Name">
+
+
+                    <label for="email">email</label><br>
+                    <input type="email" placeholder="email@email.com">
+                </form>    
+            </div>
+            <p>By providing your information and clicking "Get in Touch", You consent<br> and agree to receive marketing emails from Dectera, and that your<br> information will be used in accordance with the Dectera <a href="#">Term of Use</a><br>and <a href="#">Privacy Policy,</a> including relevant opt out provisions therein.</p>
+            <a href="#" class="btn" style="color: wheat;">GET IN TOUCH</a>
+        </div>
+        <div id="links">
+            <div class="first">
+            <ul>
+                <li>FEATURES PROGRAMS</li><br>
+                <li><a href="#">Introductory to Cybersecurity</a></li>
+                <li><a href="#">Intermediate JavaScript</a></li>
+                <li><a href="#">Monetization Startegy</a></li>
+                <li><a href="#">Growth Product Manager </a></li>
+                <li><a href="#">Java Web Developer</a></li>
+                <li><a href="#">Data Product Manager</a></li>
+                <li><a href="#">Applying Data Science to Product Management</a></li>
+                <li><a href="#">Establishing Data Infrastructure</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">AI for Healthcare</a></li>
+                <li><a href="#">AWS Cloud Architect</a></li>
+                <li><a href="#">Intel&reg; Edge AI for IoT Developers</a></li>
+                <li><a href="#">Product Manager</a></li>
+                <li><a href="#">AI for Business Leaders</a></li>
+                <li><a href="#">Data Intro to Machine Learning with TensorFlow</a></li>
+                <li><a href="#">Data Streaming</a></li>
+                <li><a href="#">UX Designer</a></li>
+                <li><a href="#">AI Product Manager</a></li>
+                <li><a href="#">Sensor Fusion Engineer</a></li>
+                <li><a href="#">Data Visualization</a></li>
+                <li><a href="#">Cloud Developer</a></li>
+                <li><a href="#">Cloud Dev Ops Engineer</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Data Structure and Algorithms</a></li>
+                <li><a href="#">Marketing Analytics</a></li>
+                <li><a href="#">Data Engineer</a></li>
+                <li><a href="#">Android Basics</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">iOS Developer</a></li>
+                <li><a href="#">Business Analytics</a></li>
+                <li><a href="#">Data Analyst</a></li>
+                <li><a href="#">Front End Web Developer</a></li>
+                <li><a href="#">Full Stack Wed Developer</a></li>
+                <li><a href="#">Intro to Programming</a></li>
+                <li><a href="#">Intro to Machine Learning</a></li>
+                <li><a href="#">Machine Learning Engineer</a></li>
+                <li><a href="#">Predictive Analytics for Business</a></li>
+                <li><a href="#">Programming for Data Science with Python</a></li>
+                <li><a href="#">Programming for Data Science with R</a></li>
+                <li><a href="#">React</a></li>
+                <hr>
+                <pre>&copy; 2011-2020 Dectera,Inc.   Legal & Privacy    Site Map </pre>
+                <p class="small"><small>"Nanodegree" is a registered trademark of Dectera.&copy; 2011-2020 Dectera,Inc.<br>Dectera is not an accredited university and we don't confer traditional degrees. Dectera nanodegree programs represent collaborations with our industry partners who help us develop<br> our content and who hire our program graduates.</small></p>
+            </ul>
+            </div>
+            <div class="second">
+            <ul>
+                <li>ONLY AT DECTERA</li><br>
+                <li><a href="#">Artificial Inteliigence</a></li>
+                <li><a href="#">Deep Learning</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Flying Car and Autonomous Flight Engineer</a></li>
+                <li><a href="#">Intro to Self-Driving Cars</a></li>
+                <li><a href="#">Machine Learning Engineer</a></li>
+                <li><a href="#">Robotics Software Engineer</a></li>
+            </ul>
+            </div>
+            <div class="third">
+            <ul>
+                <li>DECTERA SCHOOLS</li><br>
+                <li><a href="#">Self-Driving Car Engineer</a></li>
+                <li><a href="#">School of Artificial Intelligence</a></li>
+                <li><a href="#">School of Autonomous Systems</a></li>
+                <li><a href="#">School of Business</a></li>
+                <li><a href="#">School of Data Science</a></li>
+                <li><a href="#">School of Programming</a></li>
+                <li><a href="#">School of Cloud Computing</a></li>
+            </ul>
+            </div>
+            <div class="fourth">
+            <ul>
+                <li>RESOURCES</li><br>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Career Resource Center</a></li>
+                <li><a href="#">Career Services</a></li>
+                <li><a href="#">Stident Success</a></li>
+                <li><a href="#">Dectera Talks</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">What is AI</a></li>
+            </ul>
+            </div>
+            <div class="fifth">
+            <ul>
+                <li>PROGRAMS</li><br>
+                <li><a href="#">Veterans</a></li>
+                <li><a href="#">Georgia Tech</a></li>
+            </ul>
+            </div>
+            <div class="sixth">
+            <ul>
+                <li>COMPANY</li><br>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">In the News</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Dectera Intersect</a></li>
+                <li><a href="#">Become an Instructor</a></li>
+            </ul>
+            </div>
+            <div class="seventh">
+            <ul>
+                <li>ENTERPRISE</li><br>
+                <li><a href="#">Dectera for Enterprise</a></li>
+                <li><a href="#">Enterprise Resource Center</a></li>
+            </ul>
+            </div>
+            <div class="eighth">
+            <ul>
+                <li>SUPPORT</li><br>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help and FAQ</a></li>
+                <li><a href="#">Service Status</a></li>
+                <li><a href="#">Tech Requirements</a></li>
+            </ul>
+            </div>
+            <hr>
+        </div>
+
+
+        <script>
+            function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunctionA() {
+    document.getElementById("career").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentA");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunctionB() {
+    document.getElementById("for-enterprise").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentB");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+    </body>
+</html>

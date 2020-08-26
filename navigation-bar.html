@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation bar</title>
+        <style>
+            p{
+                margin: 0px;
+            }
+            a {
+                background-color: aqua;
+                border: 1px solid aqua;
+                border-radius: 13px 13px 0 0;
+                color: red;
+            }
+            a:hover {
+                background-color: aquamarine;
+            }
+            nav {
+                background-color: teal;
+            }
+            h1 {
+                text-align: left;
+                font-size: xx-large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            .wash {
+                color: coral;
+            }
+        </style>
+      
+    </head>
+    <body>
+        <nav>
+            <hr>
+            <p><a href="#">Home</a> &nbsp; <a href="#">Tips and Tricks</a> &nbsp; <a href="#">Problem-Solving</a> &nbsp; <a href="#">Products</a> &nbsp; <a href="#">About Our Store</a> &nbsp; <a href="#">Contact Us</a></p>
+            <hr>
+        </nav>
+        <h1>P3Car<span class="wash">wash</span></h1>
+        <audio controls>
+            <source src="../audio/02 Spoil My Night (feat. Swae Lee).m4a"
+        </audio>
+        <div id="our-div"></div>
+        <script>
+            var ourDiv = document.getElementById("our-div");
+            var newParagraph = document.createElement("p");
+            var copy = document.createTextNode("Hello,World!");
+            newParagraph.appendChild(copy);
+            ourDiv.appendChild(newParagraph);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RumaTech Store</title>
+        <style>
+            body{
+                background-color:darkslategray;
+                font-family: Arial, Helvetica, sans-serif;
+                color: oldlace;
+            }
+            #search-text-input{
+                border-top: thin solid #e5e5e5;
+                border-right: thin solid #e5e5e5;
+                border-bottom: 0;
+                border-left: thin solid #e5e5e5;
+                box-shadow: 0px 1px 1px 1px #e5e5e5;
+                position: absolute;
+                top: 0;
+                right: 0;
+                float: left;
+                height: 17px;
+                margin: .8em 0 0 .5em;
+                outline: 0;
+                padding: .4em 0 .4em .6em;
+                width:183px;
+            }
+            #button-holder{
+                margin: 4px;
+                width: 20px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                float: left;
+            }
+            .header{
+                color: brown;
+            }
+            input[type=search] {
+                background-color: white;
+                background-image: url('search.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding-left: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Ruma<span class="header">Tech</span> Store<small>&trade;</small><small><br><i>Get the best products here...</i></small></P></h1>
+       
+            <p>choose from the categories of items we offer.</p>
+            <select name="Categories">
+            <option></option>    
+            <option>Electronics</option>
+            <option>Accessories</option>
+            <option>Computers</option>
+            <option>Cameras</option>
+            <option>fashion</option>
+        </select>
+        <input type="search" placeholder="Search" id="search-text-input">
+        
+        <hr>
+        
+
+    </body>
+</html>

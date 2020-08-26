@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign in</title>
+        <style>
+            body {
+                background-color: wheat;
+                color: gray;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: static;
+            
+            }
+            li {
+                display: inline;
+            }
+            li a {
+                display: inline-block;
+                color: gray;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font: xx-large;
+            }
+            li a:hover {
+                background-color: lightgray;
+            }
+            #sign {
+                width: 620px;
+                height: 680px;
+                background-color: snow;
+                margin: 50px auto;
+                border: 2px solid gray;
+                box-shadow: 0px 8px 16px 0px rgb(146, 148, 148, 0.5);
+            }
+            h1 {
+                text-align: center;
+                text-shadow: 0px 4px 6px 1px black;
+            }
+            #label {
+                color: gray;
+                margin: 50px auto;
+                display: block;
+                font-size: medium;
+                text-align: center;
+            }
+            #label ul {
+                list-style-type: none;
+                display: block;
+                position: relative;
+                top: 50px;
+            }
+            #label li input {
+                margin: 10px auto;
+                padding: 10px;
+                box-shadow: 0px 8px 16px 0px dimgray;
+        
+            }
+            .big {
+                font-size: x-large;
+            }
+            #lower input {
+                margin: 5px auto;
+            }
+            #lower p {
+                text-align: center;
+            }
+            #lower .terms {
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+            #lower .privacy {
+                text-decoration: none;
+                color: teal;
+            }
+            #last input {
+                display: block;
+                padding: 10px 20px;
+                margin: auto;
+                box-shadow: 0px 8px 18px 0px dimgray;
+                background-color: teal;
+                color: whitesmoke;
+                cursor: pointer;
+            }
+            #last a {
+                display: block;
+                position: relative;
+                left: 210px;
+                text-decoration: none;
+                color: teal;
+                font-size: 20px;
+                margin: 15px;
+            }
+            p {
+            text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Dectera</h1>
+        <div id="sign">
+            <div id="upper">
+                <ul>
+                  <li><a href="#">SIGN UP</a></li>
+                  <li><a href="Dectera-sign-in.html">SIGN IN</a></li>
+                </ul>
+            </div>
+            <div id="label">
+                <ul>
+                   <li><p><span class="big">Sign in to yout account</span><br>Build skills for today,tomorrow and beyond. Education to future-proof your career.</p></li>
+                   <li><input type="button" value="Sign in with Google"></li><br>
+                   <li><input type="button" value="Sign in with Facebook"></li>
+                   <hr>
+                </ul>   
+            </div>
+            <div id="lower">
+                <p>Or</p>
+                <label for="email">Email:<input type="email" name="mail" id="email"></label><br>
+                <label for="password">Password:<input type="password" name="password" id="passwd"></label>
+                <p>By clicking Sign in, you agree to out <a href="#" class="terms">Terms of use</a> and our <a href="#" class="privacy">Privacy Policy.</a></p>
+            </div>
+            <div id="last">
+                <form action="Dectera.html">
+                   <input type="submit" value="SIGN IN">
+                   <a href>Forgot your password?</a>
+                   <hr>
+                </form>
+                <p>Or</p>
+                <a href="#">Sign in with your organization</a>
+            </div>
+        </div>
+        
+
+    </body>
+    
+</html>

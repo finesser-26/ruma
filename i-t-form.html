@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Form</title>
+    <meta charset="UTf-8">
+    <style>
+        body {
+            background-color: wheat;
+            margin-top: 2opx;
+            margin: auto;
+        }
+        .form-group {
+            padding: 20px;
+        }
+        label {
+            display: block;
+            font-size: x-large;
+        }
+        li {
+            display: inline;
+        }
+        #my-form{
+            background-color: darkred;
+            padding: 20px;
+            margin-top: 20px;  
+            border: 10px gold solid;    
+        }
+        form h1{
+            text-align: center;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <form id="my-form">
+            <h1>Registration Form</h1>
+
+                    <div class="form-group">       
+                    <label for="Name">Name:</label><input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                    <label for="age">Age:</label><input type="text" name="age" id="age">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email:</label><input type="text" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                    <label for="password">Password:</label><input type="password" name="password" id="password">
+                </div>
+                <p>courses:</p>
+                    <div class="form-group">
+                    <select name="courses" id="course" size="1">
+                        <option value="Web Design">Web Design</option>
+                        <option value="">Mobile Development</option>
+                    </select>
+                </div>
+                <label for="message">Message</label>
+                    <div class="form-group">
+                    <textarea cols="20" rows="8"></textarea>
+                </div>
+                <input type="button" value="submit">
+                    <Div class="form-group">
+                </Div>
+        </form>
+        <h1>A different form</h1>
+        <ul>
+            <li><a href="#">House</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </body>
+
+
+</html>

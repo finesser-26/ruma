@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 10px;
+            background-color: #cccccc;
+            transition: .4s;
+            width: 58px;
+            height: 32px;
+        }
+        .slider::before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196bf;
+        }
+        input:checked + .slider::before {
+            transform: translateX(26px);
+        }
+        .slider-round {
+            border-radius: 34px;
+            width: 58px;
+            height: 35px;
+            position: absolute;
+            cursor: pointer;
+            top: 70px;
+            right: 0;
+            bottom: 0;
+            left: 10px;
+            background-color: #cccccc;
+            transition: .4s;
+        }
+        .slider-round::before {
+            border-radius: 50%;
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider-round {
+            background-color: #2196bf;
+        }
+        input:checked + .slider-round::before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <label class="Switch">
+        <input type="checkbox">
+        <div class="slider"></div>
+    </label>
+    <label class="Switch">
+        <input type="checkbox">
+        <div class="slider-round"></div>
+    </label>
+</body>
+</html>
