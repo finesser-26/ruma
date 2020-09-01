@@ -1,0 +1,52 @@
+body {
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: 19px;
+}
+.header img {
+    position: relative;
+    left: 30em;
+}
+.header p {
+    text-align: center;
+}
+.header h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+.header p {
+    font-weight: bolder;
+}
+.container {
+    display: flex;
+}
+.timeline li {
+    border-top: 3.5px solid gray;
+    padding: 8px;
+    list-style-type: none;
+}
+.borderbtm {
+    border-bottom: 3.5px solid gray;
+}
+.bold {
+    font-weight: bolder;
+    border-bottom: 2px solid gray;
+}
+.summary li {
+    list-style-type: none;
+    padding: 5px;
+}
+.summary {
+    flex: 1;
+}
+.summary img {
+    margin: 10px;
+}
+.last {
+    font-family: cursive;
+    font-size: 18px;
+}
+.last a {
+    text-decoration: none;
+    color: royalblue;
+}
