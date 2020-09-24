@@ -4,7 +4,14 @@
         <title>Horizontal nav bar</title>
         <meta charset="UTF-8">
         <style>
-            body {margin: 0;}
+            body {
+                margin: 0;
+                background-color: teal;
+                height: 1500px;
+                padding: 20px;
+                margin-top: 30px;
+            
+            }
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -27,10 +34,8 @@
             }
             li a:hover {
                 background-color: #111111;
+                color: skyblue;
             }
-        .active {
-            background-color: #4caf50;
-        }
         h1::before {
             content: url(.../images/blackgoose.png);
         }
@@ -38,12 +43,12 @@
     </head>
     <body>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">More</a></li>
-            <li style="float: right;"><a href="#">About</a></li>
+            <li><a href="#">About</a></li>
         </ul>
-        <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+        <div>
                 <h1>Fixed Top Navigation Bar</h1>
                 <h2>Scroll this page to see the effect</h2>
                 <h2>The navigation bar will stay at the top of the page while scrolling</h2>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <p>total: $0.00</p>
+
+    <script>
+        const list = document.querySelector('ul');
+        const totalBox = document.querySelector('p');
+        let total = 0;
+        list.innerHTML = '';
+        totalBox.textContent = '';
+
+        let cartList = ['bread:6.99', 'milk:14.99', 'cheese:17.99', 'noodles:10.99', 'eggs:8.99'];
+        
+        for (let i = 0; i < cartList.length; i++) {
+            let subArray = cartList[i].split(':');
+            let name = subArray[0];
+            let price = Number(subArray[1]);
+            let number = total;
+            total += price - 0.4*price;
+            let itemText = name + '- $' + price;
+
+            let listItem = document.createElement('li');
+            listItem.textContent = itemText;
+            list.appendChild(listItem);
+            
+        }
+            totalBox.textContent = 'total : $' + total.toFixed(2);
+
+        
+    </script>
+</body>
+</html>

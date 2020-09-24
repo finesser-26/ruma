@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="lenth">Length:</label>
+        <input type="text" class="length">
+
+        <label for="width">width:</label>
+        <input type="text" class="width">
+
+        <button>Cal Area: </button>
+        <p class="result"></p>
+    </form>
+
+    <script>
+        const lOfR = document.querySelector('.length');
+        const wOfR = document.querySelector('.width');
+        const result = document.querySelector('.result');
+        const aOfR = document.querySelector('.button');
+        area.textContent = '';
+
+        function AreaOfRectangle() {
+            let lenght = Number(lOfR.value);
+            let width = Number(wOfR.value);
+
+            result.textContent = 'The area is ' + length*width; 
+        } 
+        aOfR.addEventListener('click ', AreaOfRectangle);
+    </script>
+</body>
+</html>
